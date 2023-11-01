@@ -41,7 +41,7 @@ function App() {
     setArray(newArr);
     setResult(newArr.join(", "));
   };
-  // 실패한 첫번째 트라이 - 아래랑 모범답안과 비교해볼것!!!
+  // 실패한 첫번째 시도 - 아래랑 모범답안과 비교해볼것!!!
   // const hndlPop = function () {
   //   const newArr = [...array];
   //   console.log(newArr);
