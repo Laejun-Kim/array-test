@@ -4,7 +4,7 @@ import { useState } from "react";
 
 function App() {
   const initialState = ["apple", "banana", "cherry", "date", "elderberry"];
-  const [array, setArray] = useState(initialState); //지금 이거 자체가 구조분해할당한거야
+  const [array, setArray] = useState(initialState); //지금 이거 자체가 구조분해할당한것임을 명심
   const [result, setResult] = useState("");
   const [query, setQuery] = useState(""); //input을 위한 value
 
@@ -66,7 +66,7 @@ function App() {
     const newArr = [...array];
     newArr.splice(2, 2, query === "" ? "kiwi, lime" : query);
 
-    setArray(newArr);
+    // setArray(newArr);
     setResult(newArr.join(", "));
   };
 
