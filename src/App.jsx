@@ -64,7 +64,7 @@ function App() {
   //도전과제) 나중에 시간 남으면 입력값을 삽입하게끔 바꿔보기
   const hndlSplice = () => {
     const newArr = [...array];
-    newArr.splice(2, 2, "kiwi", "lime");
+    newArr.splice(2, 2, query === "" ? "kiwi, lime" : query);
 
     setArray(newArr);
     setResult(newArr.join(", "));
